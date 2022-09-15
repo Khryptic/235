@@ -1,0 +1,50 @@
+body {
+    font-family: 'Source Code Pro', monospace, Arial, Helvetica, sans-serif;
+    color: lightblue;
+    background-color: rgb(29, 29, 29);
+}
+
+h1 {
+    border-bottom: 1px solid white;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#bio {
+    font-size:larger;
+    clear:left;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.gametitle {
+    font-size: large;
+    color: whitesmoke;
+}
+
+#profile {
+    width: 25%;
+    float: right;
+    margin-right: 40px;
+}
+
+a.socialmedia {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.project {
+    font-size: medium;
+    margin-right: 50px;
+}
+
+footer {
+    margin-left: 15px;
+}
+
+a {text-decoration: underline;}
+    a:link {color: white;}
+    a:visited {color: aqua}
+    a:focus {color: blue; background-color: black;}
+    a:hover {color: blue; background-color: black;}
+    a:active {color: aqua; background-color: black;}
