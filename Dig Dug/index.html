@@ -16,7 +16,7 @@
             border: 2px solid black;
             background-color: #451100;
             margin: 0 auto;
-            width: 80%vw;
+            width: 100vw;
             padding: 1rem;
             }
         
@@ -40,10 +40,6 @@
             color: blueviolet;
             }
 
-        p {
-            margin-left:100px;
-            }
-
         img.redge {
             float: right;
             margin: 0 12px;
@@ -53,10 +49,17 @@
             font-family: 'Press Start 2P', cursive;
             }
 
-        p.quote {
+        #quote {
+            float: left;
+            margin-left: 25px;
+            font-size: medium;
             font-family: 'Press Start 2P', cursive;
             border-bottom: 5px solid #fbd800;
             }
+
+        #bigimage {
+            float: left;
+        }
 
         footer {
             background-color: #150000;
@@ -77,27 +80,47 @@
         <h1 class="heading">Dig Dug</h1>
     <main>
         <h2> 
-            <p class="quote">
-                <quote>
-                    "I used to play this game <em>a ton</em> as a kid."
-                </quote> ~ A Dig Dug Player, probably
-            </p>
-        </h2>
-        <div id="header">Literally just an image of the game Dig Dug, have fun. Or don't.</div>
-        <br>
-        <img class="ledge" src="images/dugdig.png" alt="Dig Dug Image" width="25%vw">
-        <img class="redge" src="images/artwork.png" alt="Dig Dug artwork" width="35%vw">
-        <br><br>
-        <footer>
-            Dig Dug™ is a registered trademark of BANDAI <abbr title="Nakamura Manufacturing Company">NAMCO</abbr> ENTERTAINMENT INC.
+            Publishing Info <br>
             <br>
-            <div id="Source"><a href="https://trademarks.justia.com/766/38/dig-76638044.html">Copyright Info</a></div>
-        </footer>
-        <br>
-        <hr>
-        Check out this <a href="niceimage.html">cool page</a>.
-        <br>
-        <img src="images/bigimage.png" alt="" width="100%vh">
+            Published by: Atari, Inc. <br>
+             Developed by: <abbr title="Nakamura Manufacturing Company">NAMCO</abbr> Limited <br>
+            Released: Apr, 1982<br>
+            <br>
+            <br>
+            Description <br>
+            <br>
+            Dig Dug is a 1-2 player arcade game in which you have to use your shovel to dig your way through the earth. Stopping you from doing this are two monsters, called Pooka and Fygar, who will continually chase you around. The only weapon that you carry is an air pump, which you can use to inflate the monsters to the point where they explode. [...] <br>
+            <br>
+            <br>
+            Game Categories <br>
+            <br>
+            Genre: Action <br>
+            Perspective: Side view <br>
+            Visual: Fixed <br>
+            Gameplay: Arcade
+        </h2>
+        <div id="quote">
+            <br> <br>
+            Quote 
+            <br>
+            This definitely goes under the heading of "Games That Were Made While a Programmer Was on Drugs," or at least had a good imagination. And maybe they were into horror movies too.
+            <br> -- <a href="https://www.mobygames.com/mobyrank/source/sourceId,540/" target="_blank">https://www.mobygames.com/mobyrank/source/sourceId,540/</a>
+        </div>
     </main>
-</body>
+        <br>
+    <br><br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        Dig Dug™ is a registered trademark of BANDAI <abbr title="Nakamura Manufacturing Company">NAMCO</abbr> ENTERTAINMENT INC.
+        <br>
+        <div id="Source"><a href="https://trademarks.justia.com/766/38/dig-76638044.html">Copyright Info</a></div>
+    </footer>
+    <br>
+    <hr>
+    Check out this <a href="niceimage.html" target="_blank">cool page</a>.
+    <br>
+    <img id="bigimage" src="images/bigimage.png" alt="">
+</body> 
 </html>
