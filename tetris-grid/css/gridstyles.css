@@ -3,6 +3,10 @@ body {
     margin: 1rem;
 }
 
+p#bold {
+    font-weight: bolder;
+}
+
 #wrapper {
     display: grid;
     grid-template-areas:
