@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DOM-3</title>
+	<style>
+		body{border:1px solid gray;}
+		p b{transform: rotate(20deg)}
+	</style>
+</head>
+<body>
+<h1>My Page</h1>
+<h2>Info</h2>
+<h2>Pictures</h2>
+<h2>More Info</h2>
+<p>Blah <b>Blah</b> Blah</p>
+<p>Blah <b>Blah</b> Blah</p>
+<p id="lastParagraph">Blah <b>Blah</b> Blah</p>
+<footer>Copyright &copy; <b>20XX</b></footer>
+<script>
+	"use strict"; 
+  
+  // add your own code here.
+	document.getElementsByTagName("h1")[0].innerHTML = "My UFO Page";
+    document.getElementsByTagName("h2")[0].innerHTML = "My UFO Info";
+    document.getElementsByTagName("h2")[1].innerHTML = "My UFO Pictures";
+    document.getElementsByTagName("h2")[2].innerHTML = "";
+
+    document.body.style.fontFamily = "sans-serif";
+    document.body.style.color = "#E5271A";
+
+    document.getElementsByTagName("p")[0].innerHTML = ("Report your UFO sightings here: " + "http://www.nuforc.org".link("http://www.nuforc.org"));
+    document.getElementsByTagName("p")[0].style.color = "green";
+    document.getElementsByTagName("p")[0].style.fontWeight = "bold";
+    document.getElementsByTagName("p")[0].style.fontSize = "2em";
+    document.getElementsByTagName("p")[0].style.textTransform = "uppercase";
+    document.getElementsByTagName("p")[0].style.textShadow = "3px 2px #A44";
+
+    document.getElementsByTagName("p")[1].innerHTML = "";
+    
+    let ufo = document.createElement("img");
+    ufo.src = "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_01/2280531/180103-ufo-illustration-mn-1015.jpg";
+    ufo.alt = "";
+    document.getElementById("lastParagraph").innerHTML = ufo;
+</script>
+</body>
+</html>
