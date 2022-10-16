@@ -21,27 +21,23 @@
 	"use strict"; 
   
   // add your own code here.
-	document.getElementsByTagName("h1")[0].innerHTML = "My UFO Page";
-    document.getElementsByTagName("h2")[0].innerHTML = "My UFO Info";
-    document.getElementsByTagName("h2")[1].innerHTML = "My UFO Pictures";
-    document.getElementsByTagName("h2")[2].innerHTML = "";
+	document.querySelector("h1").innerHTML = "My UFO Page";
+  document.querySelectorAll("h2")[0].innerHTML = "My UFO Info";
+  document.querySelectorAll("h2")[1].innerHTML = "My UFO Pictures";
+  document.querySelectorAll("h2")[2].innerHTML = "";
 
-    document.body.style.fontFamily = "sans-serif";
-    document.body.style.color = "#E5271A";
+  document.body.style.fontFamily = "sans-serif";
+  document.body.style.color = "#E5271A";
 
-    document.getElementsByTagName("p")[0].innerHTML = ("Report your UFO sightings here: " + "http://www.nuforc.org".link("http://www.nuforc.org"));
-    document.getElementsByTagName("p")[0].style.color = "green";
-    document.getElementsByTagName("p")[0].style.fontWeight = "bold";
-    document.getElementsByTagName("p")[0].style.fontSize = "2em";
-    document.getElementsByTagName("p")[0].style.textTransform = "uppercase";
-    document.getElementsByTagName("p")[0].style.textShadow = "3px 2px #A44";
-
-    document.getElementsByTagName("p")[1].innerHTML = "";
-    
-    let ufo = document.createElement("img");
-    ufo.src = "https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_01/2280531/180103-ufo-illustration-mn-1015.jpg";
-    ufo.alt = "";
-    document.getElementById("lastParagraph").innerHTML = ufo;
+  document.querySelector("p").innerHTML = ("Report your UFO sightings here: <a href='http://www.nuforc.org'>http://www.nuforc.org</a>");
+  document.querySelector("p").style.color = "green";
+  document.querySelector("p").style.fontWeight = "bold";
+  document.querySelector("p").style.fontSize = "2em";
+  document.querySelector("p").style.textTransform = "uppercase";
+  document.querySelector("p").style.textShadow = "3px 2px #A44";
+  document.querySelectorAll("p")[1].innerHTML = "";
+  document.querySelectorAll("p")[2].innerHTML = "<img src='https://media-cldnry.s-nbcnews.com/image/upload/newscms/2018_01/2280531/180103-ufo-illustration-mn-1015.jpg' alt='' width='500px'>";
+  document.querySelector("footer").innerHTML = "Copyright &copy; 2022 Edward Numrich"
 </script>
 </body>
 </html>
