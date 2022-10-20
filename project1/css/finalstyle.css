@@ -1,0 +1,316 @@
+body{
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    border: 2px solid black;
+    display: grid;
+    margin-top: 10px;
+    padding-top: 20px;
+    grid-template-areas: 
+            "title"
+            "tagline"
+            "body" "editorsnote"
+            "writer"
+            "footer";
+    grid-template-columns: 1fr 400px;
+    grid-template-rows: 
+            auto
+            auto
+            auto  0px
+            120px
+            50px;
+}
+
+#title{
+    grid-area: title;
+    font-size: 11vw;
+    font-weight:bolder;
+    grid-column: 1/span2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-top: 20px solid black;
+    color: darkorange;
+    padding-top: 1px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, sans-serif;
+    text-shadow: 6px 9px 20px black;
+}
+
+#tagline{
+    grid-area: tagline;
+    grid-column: 1/span2;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-style: italic;
+    font-size: 70px;
+    text-align: center;
+    word-spacing: 3px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+#body{
+    grid-area: body;
+    width: 98%;
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 1rem;
+    font-size: large;
+    word-spacing: 3px;
+    font-weight: 500;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: justify;
+
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "left" "right";
+}
+
+.section {
+    font-weight: 900;
+    font-size: xx-large;
+    font-style: italic;
+    word-spacing: -2px;
+}
+
+#left {
+    grid-area: left;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#right {
+    grid-area: right;
+    grid-column: 2;
+    grid-row: 1;
+    position: relative;
+}
+
+#left .text {
+    margin-right: 40px;
+}
+
+#right .text{
+    margin-left: 40px;
+}
+
+#circle1, #circle2 {
+    position: relative;
+    width: 45%;
+    height: auto;
+    shape-outside: ellipse(30% 30% at 55% 55%);
+    clip-path: ellipse(55% 55% at 50% 50%);
+
+    overflow: auto;
+    padding: 40px 0px 40px 0px;
+    margin: 70px 0px 60px 0px;
+}
+
+#circle1 {
+    left:22.4%;
+    float: right;
+    margin-left: -30px;
+}
+
+#circle2 {
+    right: 22.4%;
+    float: left;
+    margin-right: -45px;
+}
+
+#circle1 img, #circle2 img{
+    width: 100%;
+    padding-top: 40px;
+}
+
+#editorsnote{
+    grid-area: editorsnote;
+    grid-column: 2;
+    grid-row: 3/span 4;
+    display: flex;
+    border-top: 30px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    z-index: 1000;
+}
+
+#innerborder{
+    justify-self: center;
+    background-color: lightskyblue;
+    padding: 15px;
+    text-align: center;
+}
+
+#outerborder{
+    display: flex;
+    background-color: white;
+    padding: 10px 15px 0px 15px;
+}
+
+#banner img {
+    width: 262px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#writer{
+    grid-area: writer;
+    text-align: right;
+    margin-right: 10px;
+    padding-top: 10px;
+}
+
+#name {
+    font-size: 2vw;
+    font-family: 'Dancing Script', cursive;
+}
+
+#job {
+    font-size: large;
+}
+
+#footer {
+    grid-area: footer;
+    grid-column: 1/span 2;
+    border-top: 20px solid black;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+#note {
+    text-align: left;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    word-spacing: 1px;
+}
+
+#notetitle {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+a:link {color: darkblue;}
+a:visited {color: chocolate;}
+a:focus {color: darkblue}
+a:hover {color: darkorange;}
+a:active {color: orange}
+
+#nav {
+    display: flex;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav a{
+    text-align: center;
+}
+
+@media screen and (max-width:1200px){
+    #wrapper {
+        padding-top: 5px;
+        display: grid;
+        grid-template-areas: 
+            "title"
+            "tagline"
+            "body"
+            "writer"
+            "editorsnote"
+            "footer";
+        grid-template-columns: 100% 0px;
+        grid-template-rows: 
+            150px
+            auto
+            auto
+            100px
+            auto
+            auto;
+    }
+
+    #tagline {
+        font-size: xx-large;
+    }
+
+    #right .text {
+        margin-right: 20px;
+    }
+
+    #body{
+        text-align: left;
+        display: inline;
+    }
+
+    #right img, #cricle2{
+        display: none;
+    }
+
+    #circle2 {
+        display: none;
+    }
+
+    #right {
+        margin-left: 0px;
+    }
+
+    #circle1 {
+        display: block;
+        width: 50%;
+        float: left;
+        margin: auto;
+    }
+
+    #left .text {
+        clear: both;
+    }
+
+    #right .text {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    #editorsnote{
+        grid-row: 5;
+        grid-column: 1;
+        width: 99%;
+        margin: 0px;
+    }
+
+    #note {
+        font-size: medium;
+    }
+
+    #notetitle {
+        font-size: 10vw;
+    }
+
+    #banner img {
+        width: 60vw;
+        padding-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #nav {
+        font-size: 17px;
+    }
+}
