@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Random Phrases</title>
+</head>
+<body>
+    <div id="box">
+        <div id="title">What Would Rean Say?</div>
+        <div id="quote"></div>
+        </div>
+    </div>
+    <div id="button">Find Out</div>
+
+    <script>
+        let button = document.getElementById("button");
+        let lastQuote;
+        let quotes = [
+            "Alas! If only my evil step-teacher would stop dumping a bunch of work on me and let me go to the ball.",
+            "Haha....",
+            "Requesting permission to burst into tears.",
+            "Wait, am I really watching a business transaction between a man and a dog like it's no big deal?",
+            "You still owe me that 50 mira.",
+        ]
+
+        button.onclick = function displayQuote(e) {
+            let rng = Math.floor(Math.random() * quotes.length);
+            while(lastQuote == rng){
+                rng = Math.floor(Math.random() * quotes.length);
+            }
+            document.getElementById("quote").innerHTML = quotes[rng];
+            lastQuote = rng;
+        }
+    </script>
+</body>
+</html>
